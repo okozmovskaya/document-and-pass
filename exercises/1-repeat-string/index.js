@@ -1,15 +1,26 @@
 /**
+ * A function that simply repeats the string a given number of times.
+ *
+ * @param {text}  - string for repeats
+ * @param {number} - number of times for repeats string
+ * @returns {string} - string which include @param {text} a given @param {number} of times without spaces.
+ * 
+ * @example
+ * repeatString('hey', 3) // returns 'heyheyhey';
  *
  */
-const repeatString = (arr, ... args) => {
-    for (i = 0, i < arr, i++) {
-        for (a = 0, a < args, a++) {
-            if (i === a) {
-                arr.splice(i, 1)
-            }
+const repeatString = (text, number) => {
+    
+    let string = '';
+
+    if (number < 0) {
+        return 'ERROR';
+    } else {
+        for (i = 0; i < number; i++) { 
+            string += text;
         }
     }
-
+        return string;
 }
 
 module.exports = repeatString

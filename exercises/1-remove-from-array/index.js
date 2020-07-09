@@ -2,8 +2,9 @@
  * A function that takes an array and some other arguments then removes the other arguments from that array.
  *
  * @param {arr}  - array who returns with remove item(s)
- * @returns {args} - arguments for remove from array
- *
+ * @param {args} - arguments for remove from array
+ * @returns {arr}
+ * 
  * @example
  * removeFromArray([1, 2, 3, 4], 3); // should remove 3 and return [1,2,4]
  *
