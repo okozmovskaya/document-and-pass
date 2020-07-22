@@ -3,6 +3,8 @@
  * @param {number} - start of array
  * @param {number} - end of array
  * @returns {number} - sum all numbers in array
+ * @example
+ * sumAll(1, 4) // returns the sum of 1 + 2 + 3 + 4 which is 10
  */
 const sumAll = (start, end) => {
     let sum = 0;
